@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2143"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/current_score"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/current_health"
+            android:textColor="#4CAF50" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/current_fuel"
+            android:textColor="#FFC107" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/health"
+            android:textColor="#4CAF50" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fuel"
+            android:textColor="#FFC107" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:barrierDirection="top" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/gas_can"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView_Star"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/_295991433"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView_Alien"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/alien_new"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView_Fireball"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/fireball"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView_Sun"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/sunny"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/rocket_2442125"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+</LinearLayout>
